@@ -1,0 +1,566 @@
+html,body {
+    background-color:white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.section-padding-y {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}   
+
+.section-padding-x{
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.text-footer {
+    color: rgb(145, 143, 143);
+}
+
+@media only screen and (min-width: 1441px) {
+    .container {
+        max-width: 1700px !important;
+        
+    }
+}
+
+@font-face {
+    font-family: DateFont;
+    src: url('TrendsFurniture_template/fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf');
+}
+
+@font-face {
+    font-family: HeadingFont;
+    src: url('TrendsFurniture_template/fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf');
+}
+
+@font-face {
+    font-family: ContentFont;
+    src: url('TrendsFurniture_template/fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Thin.ttf');
+}
+
+@font-face {
+    font-family: CountryFont;
+    src: url('TrendsFurniture_template/fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: CityFont;
+    src: url('TrendsFurniture_template/fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Light.ttf');
+}
+
+
+/*----------------------Navbar----------------------*/
+
+
+@media (max-width: 1024px) {
+    .collapse {
+        display: none !important;
+    }
+ }
+
+
+
+/*----------------------Hero Section----------------------*/
+
+.HeroSection {
+    background-image: url('TrendsFurniture_template/Images/hero_banner.jpg');
+    background-size:cover;
+    background-position: center;
+    max-width: 100%;
+}
+
+.HeroSectionDate {
+    font-family: DateFont;
+}
+
+.HeroSectionHeading {
+    font-family: HeadingFont;
+    font-size: 40px;
+}
+
+.HeroSectionCity , .HeroSectionText {
+    font-family: CityFont;
+    font-weight: 200;
+}
+
+.HeroSectionCountry {
+    font-family: CountryFont;
+    font-weight: 800;
+}
+
+.HeroButton{
+    background-color: black;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.HeroButton:hover{
+    background-color: rgb(147, 116, 11);
+    border-color: rgb(147, 116, 11);
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .ShopButton{
+        display: flex;
+        justify-content: center;
+        padding: 0 50px !important;
+        
+    }
+
+    .HeroSectionHeading{
+        text-align: center;
+    }
+
+    .HeroSectionText{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .HeroSectionDate {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 376px) {
+    .HeroSectionCity , .HeroSectionCountry {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    hr {
+        width: 100% !important;
+    }
+}
+
+
+/*----------------------Interior Section----------------------*/
+
+.LeftGridSub {
+    background-color: rgb(228, 216, 214);
+    max-height: inherit;
+}
+
+.InteriorHeading {
+    font-family: DateFont;
+    font-weight: bold;
+}
+
+.InteriorSubHeading {
+    font-family: HeadingFont;
+    font-weight: 800 !important;
+    font-size: 2.5rem;
+}
+
+.InteriorSection {
+    margin: 0 -20px !important;
+}
+
+.InteriorContent {
+    font-size: 1.14vw;
+}
+
+.InteriorButton {
+    background-color: rgb(66, 66, 66);
+    font-weight: bold;
+    border: none;
+    padding: 10px 25px;
+    transition: 1s;
+}
+
+.InteriorButton i {
+    transition: 1s;
+}
+
+.InteriorButton:hover {
+    background-color: black;
+}
+
+.InteriorButton:hover i{
+    position: relative;
+    transform: translateX(10px)
+}
+
+.LeftGrid {
+    padding: 0 20px !important;
+}
+
+.RightGrid_1 , .RightGrid_2 {
+    padding: 0 20px !important;
+}
+
+.CardButton , .CardButton1{
+    background-color: rgb(66, 66, 66);
+    font-weight: bold;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    opacity: 0;
+    z-index: -1;
+}
+
+
+.CardImageDiv .CardButton{
+    transition:  1s;
+}
+
+.CardImageDiv .CardButton1{
+    transition: 1s;
+}
+
+.CardButton:hover , .CardButton1:hover {
+    background-color: black;
+}
+
+
+@media only screen and (min-width: 1441px) {
+    .InteriorContent {
+        font-size: 1.3vw;
+    }
+    .CardImageDiv:hover .CardButton{
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(-230%);
+    }
+    .CardImageDiv:hover .CardButton1{
+        opacity: 1;
+        z-index: 1;
+
+        transform: translateY(-230%);
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+
+
+.CardImageDiv:hover .CardButton{
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(-230%);
+}
+
+
+.CardImageDiv:hover .CardButton1{
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(-230%);
+}
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .RightGrid {
+        margin: 40px 0;
+    }
+
+    .LeftGridSub {
+        max-height: none;
+    }
+
+    .InteriorContent {
+        font-size: 2vw;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .InteriorHeading , .InteriorSubHeading{
+        text-align: center;
+    }
+    .InteriorContent {
+        font-size: 15px !important;
+        text-align: center;
+    }
+
+    .InteriorButtonDiv {
+        display: flex;
+        justify-content: center;
+        text-align: center !important;
+    }
+
+    .CardImageDiv:hover .CardButton{
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(-300%);
+    }
+    .CardImageDiv:hover .CardButton1{
+        opacity: 1;
+        transform: translateY(-300%);
+    }
+
+    .RightGrid{
+        margin-bottom: 0 !important;
+    }
+
+    .RightGrid_2 {
+        padding-bottom: 0 !important;
+       
+    }
+}
+@media only screen and (max-width: 375px) {
+
+    .CardImageDiv:hover .CardButton{
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(-210%);
+    }
+
+    .CardImageDiv:hover .CardButton1{
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(-330%);
+    }
+}
+
+
+
+/*----------------------Decorative Section----------------------*/
+
+.Decorative {
+    padding:0 20px !important;
+}
+
+.DecoIntSection {
+    margin: 0 -20px !important;
+}
+
+.DecorativeContent {
+    background: url('TrendsFurniture_template/Images/background355.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 120px 40px 50px;
+}
+
+.DecorativeHeading {
+    font-family: DateFont;
+}
+
+.DecorativeSubHeading {
+    font-family: HeadingFont;
+}
+
+.DecorativeText , .InteriorCollnText {
+    font-size: 20px;
+}
+
+.DecorateButton {
+    background-color: rgb(66, 66, 66);
+    font-weight: bold;
+    border: none;
+    padding: 10px 25px;
+    transition :1s;
+}
+
+.DecorateButton i{
+    transition: 1s;
+}
+
+.DecorateButton:hover {
+    background-color: rgb(147, 116, 11);
+    border-color: rgb(147, 116, 11);
+}
+
+.DecorateButton:hover i{
+    position: relative;
+    transform: translateX(10px)
+}
+
+.DecorativeSubHeading {
+    font-family: DateFont;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.InteriorCollection {
+    padding: 0 20px !important;
+}
+
+.InteriorCollnContent {
+    background: url('TrendsFurniture_template/Images/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 120px 40px 50px;
+    
+}
+
+.InteriorCollnHeading {
+    font-family: DateFont;
+}
+
+.InteriorCollnSubHeading {
+    font-family: DateFont;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.InteriorButton_3 {
+    background-color: rgb(66, 66, 66);
+    font-weight: bold;
+    border: none;
+    padding: 10px 25px;
+    transition :1s;
+}
+
+.InteriorButton_3 i{
+    transition: 1s;
+}
+
+.InteriorButton_3:hover {
+    background-color: rgb(147, 116, 11);
+    border-color: rgb(147, 116, 11);
+}
+
+.InteriorButton_3:hover i{
+    position: relative;
+    transform: translateX(10px)
+}
+
+
+@media only screen and (max-width: 767px) {
+    .DecorativeContent , .InteriorCollnContent {
+        text-align: center;
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .InteriorCollnContent , .DecorativeContent {
+        padding: 40px 40px;
+    }
+
+    .DecorativeHeading , .InteriorCollnHeading {
+        padding: 0 !important;
+        margin: 0 !important;
+        font-size: 18px !important;
+    }
+
+    .DecorativeText , .InteriorCollnText {
+        font-size: 15px;
+    }
+
+    .DecorativeSubHeading , .InteriorCollnSubHeading {
+        font-size: 30px;
+    }
+}
+
+
+/*----------------------Support Section----------------------*/
+ 
+.SupportShipping , .SupportReturn  , .SupportPayment {
+    display: flex;
+    justify-content: center;
+}
+
+.SupportHeading{ 
+    font-weight: 800;
+}
+
+.SupportButton {
+    background-color: rgb(66, 66, 66);
+    font-weight: bold;
+    border: none;
+    padding: 10px 25px;
+    transition :0.5s;
+}
+
+.SupportButton i{
+    transition: 0.5s;
+}
+
+.SupportButton:hover {
+    background-color: rgb(147, 116, 11);
+    border-color: rgb(147, 116, 11);
+}
+
+.SupportButton:hover i{
+    position: relative;
+    transform: translateX(10px)
+}
+
+
+
+/*----------------------Quality Section----------------------*/
+
+.QualitySection {
+    background-color: rgb(230, 238, 220);
+}
+
+.QualityRow {
+    margin: 0 -25px !important;
+}
+
+.QualityLeft , .QualityRight {
+    padding: 0px 25px !important;
+}
+
+.QualityLeftSub , .QualityRightSub {
+    padding: 0 60px 0 0;
+}
+
+.QualityHeading {
+    font-family: DateFont;
+    font-weight: 800;
+}
+
+.QualityAuthorName {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .QualityLeftSub , .QualityRightSub {
+        padding: 0;
+    }
+
+}
+
+
+/*----------------------Client Section----------------------*/
+
+.ClientHeading {
+    font-family: DateFont;
+}
+
+
+.ClientImage:hover {
+    position: relative;
+    transform: translateY(-25px);
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .ClientImage {
+        width: 100% !important;
+        padding: 15px 5px !important;
+        opacity: 0.7;
+    }
+
+}
+
+
+/*----------------------Footer Section----------------------*/
+
+.FooterHeading {
+    font-family: DateFont;
+    /* font-size: 25px; */
+}
+
+.SubsButton {
+    background-color: rgb(52, 54, 59);
+    border: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .FooterDiv {
+        text-align: center;
+    }
+}
